@@ -77,8 +77,8 @@
         /* Profile Section */
         .profile {
             display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 3rem;
+            grid-template-columns: 200px 1fr; /* This creates two columns: 200px for image, rest for info */
+            gap: 3rem; /* Adds space between the image and info */
             align-items: start;
             margin-bottom: 3rem;
         }
@@ -88,19 +88,20 @@
             height: 180px;
             border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-            font-weight: bold;
+            display: flex; /* Kept for centering if you still show initials */
+            align-items: center; /* Kept for centering if you still show initials */
+            justify-content: center; /* Kept for centering if you still show initials */
+            color: white; /* Kept for centering if you still show initials */
+            font-size: 3rem; /* Kept for centering if you still show initials */
+            font-weight: bold; /* Kept for centering if you still show initials */
         }
 
         .profile-info h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            margin-left: 10rem;
-            justify-content: right;
+            /* REMOVE OR SET TO 0: margin-left: 10rem; */
+            margin-left: 0; /* Set to 0 to remove the forceful push */
+            /* justify-content: right; */ /* This property is for flexbox/grid containers, not for text directly. Remove it. */
             color: #333;
         }
 
